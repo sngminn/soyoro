@@ -2,7 +2,7 @@ import NonagonImage from "../ui/NonagonImage";
 
 export default function HeroSection() {
   return (
-    <section className="w-full max-w-[480px] mx-auto bg-soyoro-bg pt-16 pb-20 flex flex-col items-center">
+    <section className="w-full max-w-120 mx-auto bg-soyoro-bg pt-16 pb-20 flex flex-col items-center">
       <div className="w-full px-6 flex flex-col">
         {/* Top Text Content */}
         <h1 className="text-[38px] sm:text-[42px] font-bold leading-[1.15] mb-5 tracking-[-0.02em] text-soyoro-text-primary">

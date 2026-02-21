@@ -17,6 +17,20 @@
     "Segoe UI Symbol", sans-serif;
 }
 
+/* Animations */
+@keyframes marquee-vertical {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-50%);
+  }
+}
+
+@utility animate-marquee-vertical {
+  animation: marquee-vertical 40s linear infinite;
+}
+
 :root {
   --background: var(--color-soyoro-bg);
   --foreground: var(--color-soyoro-text-primary);

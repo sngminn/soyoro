@@ -30,6 +30,16 @@ graph TD
 - [x] **Phase 3: Hero 섹션 조립**
   - 가이드라인 라인(Border), 간격(Margin/Padding)을 픽셀 퍼펙트에 가깝게 구현.
   - 모바일(390px 근방) 기준의 레이아웃 최적화.
-- [ ] **Phase 4: Review 섹션 개발**
-  - `ReviewCard`: 학생들의 합격 후기를 담는 카드 컴포넌트 (태그, 학교, 후기 텍스트 등)
+- [x] **Phase 4: Review 섹션 개발**
+  - `ReviewCard`: 학생들의 합격 후기를 담는 카드 컴포넌트 (태그, 학교, 후기 대사 등)
   - `ReviewSection`: 리뷰 카드들을 세로로 나열하는 컨테이너 섹션.
+- [x] **Phase 5: Accepted List 섹션 개발**
+  - `AcceptedListSection`: 무한 세로 스크롤(Vertical Marquee) 애니메이션이 적용된 합격자 명단.
+  - 마스크(`mask-image`)를 사용해 상하단 페이드아웃 효과 적용.
+- [x] **Phase 6: Vision 섹션 개발**
+  - `VisionSection`: 합격률 통계와 예술경영 '비전'의 중요성을 설명하는 섹션.
+  - 텍스트 하이라이트 효과 (배경색 강조, 텍스트 색상 강조) 유틸리티 적용.
+  - `node.png` 이미지를 포함한 레이아웃 구성.
+- [ ] **Phase 7: Roadmap 섹션 개발**
+  - `RoadmapSection`: 상단 전경 이미지(`drama.jpg`), 로드맵 이미지(`road.png`), 그리고 스텝별 커리큘럼 카드가 나열되는 섹션.
+  - 별도의 상수로 분리된 커리큘럼 Step 데이터(`constants/roadmap.ts`) 렌더링.
