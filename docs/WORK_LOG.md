@@ -47,3 +47,14 @@
   - `HighlightText`를 재사용한 텍스트 강조 및 이미지 뷰가 포함된 `RoadmapSection.tsx` 레이아웃 구성. 전역 연동.
 - **다음 계획:**
   - `pnpm dev`를 띄워 모바일 환경에서의 전체 화면 에셋(`drama.jpg`) 및 노드 간격(`road.png`) 육안 검수 대기.
+
+## [2026-02-21] 랜딩 페이지 - 태블릿 레이아웃 최적화 기획 및 개발
+
+- **수행 내용:**
+  - `drama.jpg` 좌우 여백 넘침 버그 픽스 계획 수립.
+  - 모바일 레이아웃의 형태를 유지하며 확장 가능한 태블릿(Tablet, `md:`) 브레이크포인트 디자인 자율 기획.
+  - `MASTER_PLAN.md`에 Phase 8 추가.
+  - Hero, Review, AcceptedList, Vision, Roadmap 5개 섹션 전체에 `md:` 유틸리티 클래스 도입 및 스케일업(20% 내외) 배포 완료.
+  - Tailwind 임의의 값(`Arbitrary Values`) 경고 린트 일괄 제거.
+- **다음 계획:**
+  - 디바이스 사이즈 교차 검증 및 랜딩페이지 총괄 피드백 대기.

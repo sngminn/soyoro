@@ -40,6 +40,10 @@ graph TD
   - `VisionSection`: 합격률 통계와 예술경영 '비전'의 중요성을 설명하는 섹션.
   - 텍스트 하이라이트 효과 (배경색 강조, 텍스트 색상 강조) 유틸리티 적용.
   - `node.png` 이미지를 포함한 레이아웃 구성.
-- [ ] **Phase 7: Roadmap 섹션 개발**
+- [x] **Phase 7: Roadmap 섹션 개발**
   - `RoadmapSection`: 상단 전경 이미지(`drama.jpg`), 로드맵 이미지(`road.png`), 그리고 스텝별 커리큘럼 카드가 나열되는 섹션.
   - 별도의 상수로 분리된 커리큘럼 Step 데이터(`constants/roadmap.ts`) 렌더링.
+- [ ] **Phase 8: Tablet Layout 최적화 및 버그 픽스**
+  - `RoadmapSection`의 Full 이미지 컨테이너 넘침(Overflow) 현상 수정.
+  - 전역 컴포넌트(`Hero`, `Review`, `AcceptedList`, `Vision`, `Roadmap`)에 `md:` (태블릿, 768px 이상) 브레이크포인트를 적용.
+  - 모바일(max-w-120) 디자인의 일관성을 해치지 않는 선에서 태블릿 컨테이너 너비(`md:max-w-3xl` 등) 및 폰트 사이즈 스케일업 조율.

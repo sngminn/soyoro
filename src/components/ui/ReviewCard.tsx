@@ -24,27 +24,35 @@ const QuoteIcon = () => (
 
 export default function ReviewCard({ review }: ReviewCardProps) {
   return (
-    <div className="w-full bg-[#FCFCFC] rounded-2xl p-7 flex flex-col items-start shadow-[0_2px_10px_rgba(0,0,0,0.06)] border border-[#F0F0F0]">
-      {/* Tag Badge */}
-      <div className="inline-flex items-center justify-center bg-[#F3F6FD] text-[#22416D] text-[13px] font-bold px-3 py-1.5 rounded-full mb-4">
-        {review.tag}
+    <div className="w-full bg-[#f4f4f4] rounded-3xl md:rounded-4xl p-7 md:p-9 shadow-[inset_0_1px_3px_rgba(255,255,255,0.7),0_2px_8px_rgba(0,0,0,0.04)] border border-neutral-200/60 relative overflow-hidden">
+      {/* Decorative pseudo-texture elements for paper feel (applied via CSS classes) */}
+      <div className="absolute inset-0 opacity-[0.03] bg-[linear-gradient(45deg,#000_1px,transparent_1px),linear-gradient(-45deg,#000_1px,transparent_1px)] bg-size-[4px_4px]" />
+
+      <div className="relative z-10">
+        <div className="flex justify-between items-start mb-6 md:mb-8">
+          <div className="flex flex-col gap-2 md:gap-3">
+            {/* Tag Badge */}
+            <div className="inline-flex items-center justify-center bg-[#F3F6FD] text-[#22416D] text-[13px] font-bold px-3 py-1.5 rounded-full">
+              {review.tag}
+            </div>
+            {/* Title Area */}
+            <h3 className="text-[22px] md:text-[24px] font-bold text-[#1B325F] tracking-tight">
+              {review.university}
+            </h3>
+            <p className="text-[14px] md:text-[15px] text-gray-500 font-medium tracking-tight">
+              {review.studentInfo}
+            </p>
+          </div>
+        </div>
+
+        {/* Quote Icon */}
+        <QuoteIcon />
+
+        {/* Content Text */}
+        <p className="text-[15px] md:text-[17px] leading-[1.7] md:leading-[1.8] text-soyoro-text-primary font-medium tracking-tight whitespace-pre-line">
+          {review.content}
+        </p>
       </div>
-
-      {/* Title Area */}
-      <h3 className="text-[22px] font-bold text-[#1B325F] tracking-tight mb-1">
-        {review.university}
-      </h3>
-      <p className="text-[14px] text-gray-500 font-medium tracking-tight mb-4">
-        {review.studentInfo}
-      </p>
-
-      {/* Quote Icon */}
-      <QuoteIcon />
-
-      {/* Content Text */}
-      <p className="text-[15px] sm:text-[16px] leading-[1.75] text-[#333333] tracking-[-0.01em] break-keep">
-        {review.content}
-      </p>
     </div>
   );
 }

@@ -2,9 +2,9 @@ import { ACCEPTED_LIST } from "@/constants/accepted";
 
 export default function AcceptedListSection() {
   return (
-    <section className="w-full max-w-120 mx-auto bg-[#F9F9F9] py-16 flex flex-col items-center">
+    <section className="w-full max-w-120 md:max-w-2xl mx-auto bg-[#F9F9F9] py-16 md:py-24 flex flex-col items-center">
       <div
-        className="w-full h-150 overflow-hidden relative"
+        className="w-full h-150 md:h-200 overflow-hidden relative"
         // 위/아래 가장자리가 부드럽게 페이드아웃 되는 그라데이션 마스크
         style={{
           maskImage:
@@ -13,7 +13,7 @@ export default function AcceptedListSection() {
             "linear-gradient(to bottom, transparent, black 15%, black 85%, transparent)",
         }}
       >
-        <div className="flex flex-col items-center w-full animate-marquee-vertical text-center font-medium text-[16px] leading-[2.6] tracking-tight text-[#444444]">
+        <div className="flex flex-col items-center w-full animate-marquee-vertical text-center font-medium text-[16px] md:text-[18px] leading-[2.6] md:leading-[2.8] tracking-tight text-[#444444]">
           {/* 첫 번째 그룹 */}
           <div className="flex flex-col w-full py-2">
             {ACCEPTED_LIST.map((student, index) => (

@@ -3,20 +3,20 @@ import HighlightText from "../ui/HighlightText";
 
 export default function VisionSection() {
   return (
-    <section className="w-full max-w-120 mx-auto bg-soyoro-bg pt-20 pb-24 flex flex-col items-center">
-      <div className="w-full px-6 flex flex-col">
+    <section className="w-full max-w-120 md:max-w-2xl mx-auto bg-soyoro-bg pt-20 md:pt-32 pb-24 md:pb-32 flex flex-col items-center">
+      <div className="w-full px-6 md:px-10 flex flex-col">
         {/* Top Header - Statistics */}
-        <div className="flex flex-col mb-16">
-          <p className="text-[13px] text-soyoro-text-secondary mb-1">
+        <div className="flex flex-col mb-16 md:mb-24">
+          <p className="text-[13px] md:text-[15px] text-soyoro-text-secondary mb-1">
             #서울예대 예술경영 합격생/전체 수강생 * 100
             <br />
             #2025년, 타 예술경영 학원 대비 합격생 비율 (I학원 7%, J학원 5%)
           </p>
-          <div className="flex flex-col items-center mt-10">
-            <h2 className="text-[26px] sm:text-[30px] font-bold text-soyoro-text-primary mb-2">
+          <div className="flex flex-col items-center mt-10 md:mt-14">
+            <h2 className="text-[26px] sm:text-[30px] md:text-[40px] font-bold text-soyoro-text-primary mb-2 md:mb-4">
               서울예대 예술경영
             </h2>
-            <h2 className="text-[34px] sm:text-[38px] font-bold">
+            <h2 className="text-[34px] sm:text-[38px] md:text-[50px] font-bold">
               <HighlightText highlightClassName="bg-[#FCECD9] h-[50%] bottom-[10%]">
                 최종합격 비율 1위
               </HighlightText>
@@ -25,20 +25,20 @@ export default function VisionSection() {
         </div>
 
         {/* Middle Header - Step 1 Vision */}
-        <div className="flex justify-between items-end border-b border-soyoro-text-primary pb-3 mb-12">
-          <div className="flex flex-col text-[14px] sm:text-[15px] font-medium text-soyoro-text-secondary">
+        <div className="flex justify-between items-end border-b border-soyoro-text-primary pb-3 md:pb-5 mb-12 md:mb-16">
+          <div className="flex flex-col text-[14px] sm:text-[15px] md:text-[18px] font-medium text-soyoro-text-secondary">
             <span>예술경영 합격의 필수</span>
             <span>STEP. 1</span>
           </div>
-          <div className="flex flex-col text-right text-[28px] sm:text-[32px] font-bold text-soyoro-text-primary leading-[1.1]">
+          <div className="flex flex-col text-right text-[28px] sm:text-[32px] md:text-[44px] font-bold text-soyoro-text-primary leading-[1.1]">
             <span>예술경영</span>
             <span>비전</span>
           </div>
         </div>
 
         {/* Text Area */}
-        <div className="flex flex-col gap-6 text-[15px] sm:text-[16px] leading-[1.7] text-soyoro-text-primary font-medium tracking-tight mb-20">
-          <h3 className="text-[18px] sm:text-[20px] font-bold mb-2">
+        <div className="flex flex-col gap-6 md:gap-8 text-[15px] sm:text-[16px] md:text-[19px] leading-[1.7] md:leading-[1.8] text-soyoro-text-primary font-medium tracking-tight mb-20 md:mb-28">
+          <h3 className="text-[18px] sm:text-[20px] md:text-[26px] font-bold mb-2">
             예술경영{" "}
             <HighlightText highlightClassName="bg-[#FCECD9] h-[40%] bottom-[15%]">
               비전
@@ -58,22 +58,22 @@ export default function VisionSection() {
         </div>
 
         {/* Node Graph Image */}
-        <div className="w-full relative aspect-square sm:aspect-4/3 mb-16">
+        <div className="w-full relative aspect-square sm:aspect-4/3 mb-16 md:mb-24">
           <Image
             src="/node.png"
             alt="예술경영 비전 노드 그래프"
             fill
             className="object-contain"
-            sizes="(max-width: 480px) 100vw, 480px"
+            sizes="(max-width: 768px) 100vw, 672px"
           />
         </div>
 
         {/* Bottom Questions Area */}
         <div className="flex flex-col items-end text-right w-full">
-          <h3 className="text-[20px] font-bold text-soyoro-text-primary mb-6">
+          <h3 className="text-[20px] md:text-[26px] font-bold text-soyoro-text-primary mb-6 md:mb-8">
             비전 만들기 : 필수 질문
           </h3>
-          <ul className="flex flex-col gap-2 text-[15px] sm:text-[16px] font-medium text-soyoro-text-primary tracking-tight">
+          <ul className="flex flex-col gap-2 md:gap-3 text-[15px] sm:text-[16px] md:text-[18px] font-medium text-soyoro-text-primary tracking-tight">
             <li>내가 (뮤지컬)을 좋아하는 이유는?</li>
             <li>사람들이 (영화)를 좋아하는 이유는?</li>
             <li>세상에 (연극)이 필요한 이유는?</li>
